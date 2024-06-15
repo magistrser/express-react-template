@@ -2,8 +2,8 @@ import * as path from 'path';
 
 import express, {Request, Response} from 'express';
 
-import { exampleRouter } from '@routes/index';
 import cors from 'cors';
+import { exampleRouter } from '@routes/index';
 import expressWinston from 'express-winston';
 import winston from 'winston';
 

@@ -1,14 +1,14 @@
 import {BrowserRouter, Navigate, Routes} from 'react-router-dom';
 
+import { ExamplPage } from './containers/ExamplPage';
 import {InfoSnackbar} from './components/InfoSnackbar';
 import {LoadingHover} from './components/LoadingHover';
 import {MenuItems} from './containers/MenuItems';
 import {PageTemplate} from './containers/components/PageTemplate';
-import {Route} from 'react-router';
-import {routes} from './routes';
-import { ExamplPage } from './containers/ExamplPage';
 import { QueryClientProvider } from 'react-query';
+import {Route} from 'react-router';
 import { queryClient } from './queryClient';
+import {routes} from './routes';
 
 function App() {
   return (
