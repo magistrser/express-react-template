@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.common.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": true,
+    "target": "es2019",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@server/*": ["src/server/*"],
+      "@common/*": ["src/common/*"],
+      "@routes/*": ["src/server/routes/*"],
+      "@providers/*": ["src/server/providers/*"]
+    }
+  },
+  "include": [
+    "src/server"
+  ]
+}

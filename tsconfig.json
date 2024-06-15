@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.common.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "target": "es5",
+    "module": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "paths": {
+      "@client/*": ["src/client/*"],
+      "@common/*": ["src/common/*"],
+      "@api/*": ["src/client/api/*"],
+      "@components/*": ["src/client/components/*"],
+      "@containers/*": ["src/client/containers/*"],
+      "@routes/*": ["src/client/routes/*"],
+      "@store/*": ["src/client/store/*"],
+      "@utils/*": ["src/client/utils/*"]
+    }
+  },
+  "include": [
+    "src/client"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
