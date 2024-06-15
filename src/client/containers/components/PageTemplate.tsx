@@ -110,7 +110,7 @@ export const PageTemplate: React.FC<React.PropsWithChildren<Props>> = ({
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Street Falcon
+              express-react-template
             </Typography>
           </Toolbar>
         </AppBar>

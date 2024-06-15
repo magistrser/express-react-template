@@ -1,6 +1,6 @@
 import * as React from "react";
 import MuiAlert from "@mui/material/Alert";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { useDispatch, useSelector } from "react-redux";
 import {
   infoSnackbarActions,

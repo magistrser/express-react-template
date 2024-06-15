@@ -2,7 +2,7 @@ import * as React from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import LinkedCamera from "@mui/icons-material/LinkedCamera";
+import DataObject from "@mui/icons-material/DataObject";
 import { routes } from "@client/routes";
 import { useNavigate } from "react-router-dom";
 
@@ -13,9 +13,9 @@ export const MenuItems: React.FC = () => {
     <div>
       <ListItem button onClick={() => navigate(routes.examplePage)}>
         <ListItemIcon>
-          <LinkedCamera />
+          <DataObject />
         </ListItemIcon>
-        <ListItemText primary="Камеры" />
+        <ListItemText primary="ExampleData" />
       </ListItem>
     </div>
   );
