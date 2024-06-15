@@ -1,4 +1,4 @@
-import { ValidationResult } from 'joi';
+import { ValidationResult } from "joi";
 
 export function joiThrow(validationResult: ValidationResult): void {
   if (validationResult.error) {

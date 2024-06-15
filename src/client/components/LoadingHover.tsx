@@ -1,8 +1,8 @@
-import * as React from 'react';
-import styled from 'styled-components';
-import {useSelector} from 'react-redux';
-import {loadingHoverSelectors} from '@store/LoadingHover';
-import {CircularProgress} from '@mui/material';
+import * as React from "react";
+import styled from "styled-components";
+import { useSelector } from "react-redux";
+import { loadingHoverSelectors } from "@store/LoadingHover";
+import { CircularProgress } from "@mui/material";
 
 export const LoadingHover: React.FC = () => {
   const isHoverShowing = useSelector(loadingHoverSelectors.isHoverShowing);
@@ -10,10 +10,10 @@ export const LoadingHover: React.FC = () => {
   return isHoverShowing ? (
     <HoverWrapper>
       <Hover>
-        <CircularProgress/>
+        <CircularProgress />
       </Hover>
     </HoverWrapper>
-  ): null;
+  ) : null;
 };
 
 const HoverWrapper = styled.div`
@@ -24,13 +24,13 @@ const HoverWrapper = styled.div`
 const Hover = styled.div`
   position: absolute;
   z-index: 999999;
-  
+
   background: white;
   opacity: 0.5;
-  
+
   width: 100%;
   height: 100vh;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,3 +1,3 @@
 export type ExampleData = {
-  result: string,
+  result: string;
 };

@@ -1,8 +1,8 @@
-import { useGetExampleDataQuery } from '@client/api/common/useGetExampleDataQuery';
-import { LoadingHover } from '@client/components/LoadingHover';
-import { useCreateErrorHandler } from '@client/utils/errorHandle/useCreateErrorHandler';
-import * as React from 'react';
-import { useDispatch } from 'react-redux';
+import { useGetExampleDataQuery } from "@client/api/common/useGetExampleDataQuery";
+import { LoadingHover } from "@client/components/LoadingHover";
+import { useCreateErrorHandler } from "@client/utils/errorHandle/useCreateErrorHandler";
+import * as React from "react";
+import { useDispatch } from "react-redux";
 
 export const ExamplPage: React.FC = () => {
   const dispatch = useDispatch();
@@ -12,12 +12,8 @@ export const ExamplPage: React.FC = () => {
   });
 
   if (exampleData.isLoading) {
-    return <LoadingHover/>;
+    return <LoadingHover />;
   }
 
-  return (
-    <div>
-      {exampleData.data?.result}
-    </div>
-  );
+  return <div>{exampleData.data?.result}</div>;
 };

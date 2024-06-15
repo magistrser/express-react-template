@@ -1,8 +1,8 @@
-import {createSlice} from '@reduxjs/toolkit';
-import {StoreType} from './index';
+import { createSlice } from "@reduxjs/toolkit";
+import { StoreType } from "./index";
 
 interface LoadingHoverState {
-  show: boolean,
+  show: boolean;
 }
 
 const loadingHoverState: LoadingHoverState = {
@@ -10,7 +10,7 @@ const loadingHoverState: LoadingHoverState = {
 };
 
 export const loadingHoverSlice = createSlice({
-  name: 'loadingHover',
+  name: "loadingHover",
   initialState: loadingHoverState,
   reducers: {
     showLoadingHover: (state) => {

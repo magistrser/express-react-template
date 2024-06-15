@@ -1,12 +1,16 @@
-import * as React from 'react';
-import {CircularProgress} from '@mui/material';
+import * as React from "react";
+import { CircularProgress } from "@mui/material";
 
 interface Props {
-  isLoading?: boolean,
-  isError?: boolean,
+  isLoading?: boolean;
+  isError?: boolean;
 }
 
-export const PageWrapper: React.FC<Props> = ({isLoading, isError, children}) => {
+export const PageWrapper: React.FC<React.PropsWithChildren<Props>> = ({
+  isLoading,
+  isError,
+  children,
+}) => {
   if (isError) {
     return <></>;
   }
@@ -15,9 +19,5 @@ export const PageWrapper: React.FC<Props> = ({isLoading, isError, children}) => 
     return <CircularProgress />;
   }
 
-  return (
-    <>
-      {children}
-    </>
-  );
+  return <>{children}</>;
 };

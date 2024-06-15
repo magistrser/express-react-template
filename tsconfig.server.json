@@ -15,6 +15,12 @@
     }
   },
   "include": [
+    "src/common",
     "src/server"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist-client",
+    "dist-server"
   ]
 }

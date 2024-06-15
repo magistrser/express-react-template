@@ -1,3 +1,3 @@
 export const routes = {
-  examplePage: '/example',
+  examplePage: "/example",
 };

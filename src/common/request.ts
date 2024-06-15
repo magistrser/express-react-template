@@ -1,3 +1,3 @@
 export function createExampleDataRequest(): string {
-  return '/example';
+  return "/example";
 }

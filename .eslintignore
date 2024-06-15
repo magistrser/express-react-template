@@ -1,3 +1,4 @@
 dist
 
+webpack.client.config.ts
 webpack.client.config.js

@@ -1,6 +1,6 @@
-import {configureStore} from '@reduxjs/toolkit';
-import {infoSnackbarSlice} from './InfoSncakbar';
-import {loadingHoverSlice} from './LoadingHover';
+import { configureStore } from "@reduxjs/toolkit";
+import { infoSnackbarSlice } from "./InfoSncakbar";
+import { loadingHoverSlice } from "./LoadingHover";
 
 const index = configureStore({
   reducer: {

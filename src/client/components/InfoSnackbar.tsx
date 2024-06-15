@@ -1,15 +1,20 @@
-import * as React from 'react';
-import MuiAlert from '@mui/material/Alert';
-import styled from 'styled-components';
-import {useDispatch, useSelector} from 'react-redux';
-import {infoSnackbarActions, infoSnackbarSelectors} from '@store/InfoSncakbar';
-import {Toolbar} from '@mui/material';
+import * as React from "react";
+import MuiAlert from "@mui/material/Alert";
+import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  infoSnackbarActions,
+  infoSnackbarSelectors,
+} from "@store/InfoSncakbar";
+import { Toolbar } from "@mui/material";
 
 export const InfoSnackbar: React.FC = () => {
   const dispatch = useDispatch();
-  const infoSnackbarData = useSelector(infoSnackbarSelectors.getInfoSnackbarData);
+  const infoSnackbarData = useSelector(
+    infoSnackbarSelectors.getInfoSnackbarData,
+  );
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     dispatch(infoSnackbarActions.hideInfoSnackbar());
   };
 
@@ -22,12 +27,12 @@ export const InfoSnackbar: React.FC = () => {
         severity={infoSnackbarData.type}
         onClose={handleClose}
         sx={{
-          mt: '10px',
-          width: '300px',
+          mt: "10px",
+          width: "300px",
         }}
       >
         {infoSnackbarData.message}
-      </ MuiAlert>
+      </MuiAlert>
     </PositionWrapper>
   ) : null;
 };
